@@ -1,0 +1,22 @@
+$white:#fff;
+$black:#000;
+$header-color:#B38934;
+$fonts:('PlayfairDisplay-Italic', 500),
+('PlayfairDisplay-Regular', 400),
+('TimesNewRomanRegular',400);
+ @each $name, $weight in $fonts {
+     @font-face {
+         font-family: $name;
+         src: url('../fonts/#{$name}.ttf');
+         font-weight: $weight;
+     }
+ } 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ }
+ 

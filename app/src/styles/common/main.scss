@@ -1,0 +1,95 @@
+.main{
+    &__items{
+        &-menu{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &-us{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &-events{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &-img{
+            width: 100%;
+        }
+        &-btn{
+            padding: 13px 99px;
+            display: block;
+            border: 1px solid $black;
+            font-size: 18px;
+            line-height: 24px;
+            color: $black;
+            font-family: 'PlayfairDisplay-Regular';
+            max-width: 303px;
+            width: 100%;
+        }
+        &-title{
+            font-size: 48px;
+        line-height: 55px;
+        color: $black;
+        font-family: 'PlayfairDisplay-Regular';
+        padding: 50px 0 30px 0;
+        
+        }
+        &-describe{
+            font-size: 20px;
+            line-height: 45px;
+            color: $black;
+            max-width: 730px;
+            width: 100%;
+        }
+    }
+    &__menu-about, &__event-about, &__us-about{
+        background: #E5E5E5;
+        padding-left: 50px;
+    }
+    &__event-about{
+        padding-left: 0;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+    &__section-theme{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__theme{ 
+
+        &-first{
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        // &-first:last-child{
+        //     color: $black;
+        // }
+        // &-title:last-child{
+        //     color: $black;
+        // }
+        &-forText{
+            position: absolute;
+            top: 0;
+        }
+        &-title{
+            font-size: 48px;
+            line-height: 50px;
+            color: $white;
+            margin-top: 50px;
+            font-family: 'PlayfairDisplay-Regular'; 
+            &.tit{
+                color: $black;
+                text-align: center;
+            }
+        }
+        &-img{
+            width: 100%;
+        }
+       
+    }
+    
+}
