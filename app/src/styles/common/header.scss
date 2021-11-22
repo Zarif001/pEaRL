@@ -19,14 +19,22 @@
 }
 
 &__info{  
-  display: none;
+  // display: none;
+  position: absolute;
+  background: white;
+  top: 0;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: -290px;
+  transition: 0.5s;
       &.active{
-        align-items: center;
-    width: 290px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+        left: 0;
+    
+  
+   
       }
   
 

@@ -1,22 +1,22 @@
 header.header
     .header__content 
         .header__content-picture  
-            img(src="./images/header-bg.webp", alt="").header__content-img
+            img(src="./images/header-bg.webp" alt="").header__content-img
         .header__content-info
             .header__content-about 
                 a(href="")
-                    img(src="./images/burger.svg", alt="").header__info-img  
+                    img(src="./images/burger.svg" alt="").header__info-img  
                 a(href="").header__info-text RESERVATION
             .header__info  
-                 img(src="./images/logo.webp", alt="")  
-                 p.header__info-title LA PERLE
-                 p.header__info-describe French gourmet   
-                 ul 
+                img(src="./images/logo.webp" alt="")  
+                p.header__info-title LA PERLE
+                p.header__info-describe French gourmet   
+                ul 
                     -var list = ['MENU','ABOUT','RESERVATIONS','NEWS', 'EVENTS','CAREERS','CONTACT']
                     each item in list 
                         li: a(href="").header__info-link=item 
                 .header__info-embles
-                    img(src="./images/meta.svg", alt="")
-                    img(src="./images/insta.svg", alt="")
-             
-            
+                    img(src="./images/meta.svg" alt="")
+                    img(src="./images/insta.svg" alt="")
+
+
