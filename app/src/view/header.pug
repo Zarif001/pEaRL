@@ -9,14 +9,16 @@ header.header
                 a(href="").header__info-text RESERVATION
             .header__info  
                 img(src="./images/logo.webp" alt="")  
-                p.header__info-title LA PERLE
-                p.header__info-describe French gourmet   
+                h2.header__info-title LA PERLE
+                h5.header__info-describe French gourmet   
                 ul 
                     -var list = ['MENU','ABOUT','RESERVATIONS','NEWS', 'EVENTS','CAREERS','CONTACT']
                     each item in list 
                         li: a(href="").header__info-link=item 
-                .header__info-embles
+                .header__info-emblems
                     img(src="./images/meta.svg" alt="")
-                    img(src="./images/insta.svg" alt="")
+                    img(src="./images/insta.svg" alt="").header__emblems-img
+                    img(src="./images/tg.svg", alt="")
+                    p.header__info-language EN/RU
 
 

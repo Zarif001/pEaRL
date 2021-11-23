@@ -19,7 +19,6 @@
 }
 
 &__info{  
-  // display: none;
   position: absolute;
   background: white;
   top: 0;
@@ -30,6 +29,7 @@
   align-items: center;
   left: -290px;
   transition: 0.5s;
+  padding-top: 22px;
       &.active{
         left: 0;
     
@@ -46,18 +46,19 @@
           cursor: pointer;
   }
   &-title{
-    color: #B38934;
+    color:$header-color;
     font-size: 42px;
     line-height: 42px;
     margin-top: 15px;
     font-family: 'TimesNewRomanRegular';
+    font-weight: 500;
   }
   &-title::after{
       display: block;
       content: '';
       width: 190px;
 height: 2px;
-background: #B38934;
+background: $header-color;
 margin: 10px 0;
   }
   &-describe{
@@ -66,6 +67,7 @@ margin: 10px 0;
 line-height: 24px;
 font-family: 'PlayfairDisplay-Italic';
 margin-bottom: 53px;
+font-weight: 400;
   }
   &-link{
       color: $black;
@@ -73,9 +75,22 @@ margin-bottom: 53px;
       line-height: 55px;
       font-family: 'PlayfairDisplay-Regular';
   }
-//   &-link:last-child{
-//       padding-bottom: 50px;
-//   }
+  &-emblems{
+    width: 50%;
+    margin-top: 50px;
+  }
+  &-language{
+    color: $header-color;
+    font-family: 'TimesNewRomanRegular';
+    font-size: 20px;
+    line-height: 20px;
+    margin: 45px 0;
+
+    // надо спросить про всю видимую часть 
+  }
   
+}
+&__emblems-img{
+  margin: 0px 20px ;
 }
 }
