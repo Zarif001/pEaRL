@@ -92,7 +92,7 @@
   }
   &__right {
     display: flex;
-    padding: 150px 85px;
+      padding: 150px 0 150px 85px;
     &-input {
       border: none;
       border-bottom: 1px #838383 solid;
@@ -111,6 +111,7 @@
       color: $black;
       font-family: "PlayfairDisplay-Regular";
       font-weight: 400;
+      margin-top: 15px;
     }
     &-btn {
       color: $black;
@@ -118,6 +119,9 @@
       padding: 15px 90px;
       display: inline-block;
       cursor: pointer;
+      background: $white;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
     }
   }
   &__left {
@@ -148,6 +152,10 @@
       max-width: 730px;
       width: 100%;
       margin-top: 50px;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
     }
   }
 }
+
+
