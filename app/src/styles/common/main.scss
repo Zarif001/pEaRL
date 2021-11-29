@@ -4,17 +4,21 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+
     &-us {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+
     &-events {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+
     &-img {
       width: 100%;
     }
+
     &-btn {
       padding: 13px 99px;
       display: block;
@@ -26,6 +30,7 @@
       max-width: 303px;
       width: 100%;
     }
+
     &-title {
       font-size: 48px;
       line-height: 55px;
@@ -34,6 +39,7 @@
       font-weight: 400;
       padding: 50px 0 30px 0;
     }
+
     &-describe {
       font-size: 20px;
       line-height: 45px;
@@ -42,12 +48,14 @@
       width: 100%;
     }
   }
+
   &__menu-about,
   &__event-about,
   &__us-about {
     background: #e5e5e5;
     padding-left: 50px;
   }
+
   &__event-about {
     padding-left: 0;
     padding-right: 50px;
@@ -56,20 +64,24 @@
     align-items: flex-end;
     text-align: right;
   }
+
   &__section-theme {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   &__theme {
     &-first {
       position: relative;
       display: flex;
       justify-content: center;
     }
+
     &-forText {
       position: absolute;
       top: 0;
     }
+
     &-title {
       font-size: 48px;
       line-height: 50px;
@@ -77,22 +89,28 @@
       margin-top: 50px;
       font-family: "PlayfairDisplay-Regular";
       font-weight: 400;
+
       &.tit {
         color: $black;
         // margin-left: 50px;
       }
     }
+
     &-img {
       width: 100%;
     }
   }
+
   &__section-record {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   &__right {
     display: flex;
-      padding: 150px 0 150px 85px;
+    flex-wrap: wrap;
+    padding: 150px 0 150px 85px;
+
     &-input {
       border: none;
       border-bottom: 1px #838383 solid;
@@ -105,6 +123,7 @@
       font-weight: 400;
       outline: none;
     }
+
     &-monday {
       font-size: 18px;
       line-height: 21px;
@@ -113,6 +132,7 @@
       font-weight: 400;
       margin-top: 15px;
     }
+
     &-btn {
       color: $black;
       border: 1px solid $black;
@@ -124,9 +144,11 @@
       font-weight: 400;
     }
   }
+
   &__left {
     background: #e5e5e5;
     padding-left: 50px;
+
     &-title {
       font-size: 48px;
       line-height: 55px;
@@ -135,6 +157,7 @@
       color: $black;
       margin-top: 50px;
     }
+
     &-describtion {
       color: $black;
       font-size: 20px;
@@ -145,6 +168,7 @@
       width: 100%;
       margin-top: 30px;
     }
+
     &-describe {
       font-size: 20px;
       line-height: 45px;
@@ -156,6 +180,46 @@
       font-weight: 400;
     }
   }
+
+  // SecondIndex.pug
+  &__kitchen {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-img {
+      width: 100%;
+    }
+
+    &-picture {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 48px;
+      line-height: 50px;
+      color: $white;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
+      position: absolute;
+      top: 50px;
+    }
+
+    &-btn {
+      color: $white;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      position: absolute;
+      bottom: 43px;
+      border: 1px solid $white;
+      padding: 13px 124px;
+
+    }
+
+  }
 }
-
-

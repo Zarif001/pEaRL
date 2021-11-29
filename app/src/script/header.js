@@ -13,13 +13,8 @@ headerImg.addEventListener('click', (e) =>{
       headerInfo.classList.add('active')
   }
 })
-
-
-headerContentImg.addEventListener('click', (e) => {
-  if(e.target.classList.contains('header__content-img')){
-    headerInfo.classList.remove('active')
-  }
+headerContentImg.addEventListener('click', () =>{
+  headerInfo.classList.remove('active')
 })
-
 
 

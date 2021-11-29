@@ -1,7 +1,6 @@
 header.header
     .header__content 
-        .header__content-picture  
-            img(src="./images/header-bg.webp" alt="").header__content-img
+        img(src="./images/header-bg.webp", alt="").header__content-img
         .header__content-info
             .header__content-about 
                 a(href="")
@@ -12,9 +11,13 @@ header.header
                 h2.header__info-title LA PERLE
                 h5.header__info-describe French gourmet   
                 ul 
-                    -var list = ['MENU','ABOUT','RESERVATIONS','NEWS', 'EVENTS','CAREERS','CONTACT']
-                    each item in list 
-                        li: a(href="thirdIndex.pug").header__info-link=item 
+                    li: a(href="thirdIndex.pug").header__info-link MENU 
+                    li: a(href="./secondIndex.pug").header__info-link ABOUT 
+                    li: a(href="").header__info-link RESERVATIONS 
+                    li: a(href="").header__info-link NEWS 
+                    li: a(href="").header__info-link EVENTS 
+                    li: a(href="").header__info-link CAREERS 
+                    li: a(href="").header__info-link CONTACT 
                 .header__info-emblems
                     img(src="./images/meta.svg" alt="")
                     img(src="./images/insta.svg" alt="").header__emblems-img

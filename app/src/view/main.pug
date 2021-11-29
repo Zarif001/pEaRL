@@ -44,16 +44,16 @@ main.main
             h2.main__theme-title.tit CONTINUE READING OUR NEWS HERE
     .main__section-record   
         .main__right
-            .main__right-form
-                    input(type="text" placeholder="Date").main__right-input
-                    input(type="text" placeholder="How many people").main__right-input
-                    input(type="text" placeholder="Your name").main__right-input
+            form(action="submit")
+                    input(type="text" placeholder="Date" required).main__right-input
+                    input(type="text" placeholder="How many people" ).main__right-input
+                    input(type="text" placeholder="Your name" ).main__right-input
                     p.main__right-monday Monday - Sunday ; 09:00 - 02:00
             .main__right-weeks  
             form(action="") 
-                input(type="text" placeholder="Time").main__right-input
-                input(type="text" placeholder="Special wishes").main__right-input
-                input(type="text" placeholder="Your phone").main__right-input
+                input(type="text" placeholder="Time"  required).main__right-input
+                input(type="text" placeholder="Special wishes" required ).main__right-input
+                input(type="text" placeholder="Your phone"  required).main__right-input
                 button(type="submit").main__right-btn RESERVATION  
         .main__left     
             h2.main__left-title  RESERVE A TABLE

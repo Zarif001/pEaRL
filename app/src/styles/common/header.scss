@@ -1,23 +1,22 @@
 .header{
-    margin-bottom: -4px;
-&__content-img{
+&__content{
+  margin-bottom: -4px;
+  // background: url('./app/build/images/header-bg.webp');
+  &-img{
     width: 100%;
 }
-&__content-picture{
- position: relative;       
-}
-&__content-info{
-    position: absolute;
+&-info{
+  position: absolute;
     top: 0;
     width: 100%;
 }
-&__content-about{
+&-about{
         display: flex;
         justify-content: space-between;
         margin: 50px 50px 0 50px;
         align-items: center;
 }
-
+}
 &__info{  
   position: absolute;
   background: white;
