@@ -1,7 +1,8 @@
 .header{
 &__content{
   margin-bottom: -4px;
-  // background: url('./app/build/images/header-bg.webp');
+  background: url('../images/header-bg.webp') no-repeat center center /cover;
+  height: 100vh;
   &-img{
     width: 100%;
 }
@@ -9,6 +10,7 @@
   position: absolute;
     top: 0;
     width: 100%;
+    height: 100%;
 }
 &-about{
         display: flex;
@@ -19,6 +21,7 @@
 }
 &__info{  
   position: absolute;
+  height: 100%;
   background: white;
   top: 0;
   width: 290px;
