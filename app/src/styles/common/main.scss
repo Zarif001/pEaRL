@@ -10,9 +10,13 @@
       grid-template-columns: 1fr 1fr;
     }
 
+
     &-events {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      &_2{
+        display: none;
+      }
     }
 
     &-img {
@@ -108,8 +112,11 @@
 
   &__right {
     display: flex;
-    flex-wrap: wrap;
-    padding: 150px 0 150px 85px;
+    // align-items: center;
+    // justify-content: center;
+    // flex-wrap: wrap;
+
+    padding: 150px 20px;
 
     &-input {
       border: none;
@@ -129,8 +136,7 @@
       line-height: 21px;
       color: $black;
       font-family: "PlayfairDisplay-Regular";
-      font-weight: 400;
-      margin-top: 15px;
+      font-weight: 400; 
     }
 
     &-btn {
@@ -142,6 +148,11 @@
       background: $white;
       font-family: "PlayfairDisplay-Regular";
       font-weight: 400;
+    }
+
+    &-weeks {
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -183,30 +194,8 @@
 
   // SecondIndex.pug
   &__kitchen {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    &-img {
-      width: 100%;
-    }
-
-    &-picture {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-    &-about {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;  
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-    }
+    display: flex;
+    width: 100%;
 
     &-title {
       font-size: 48px;
@@ -214,27 +203,127 @@
       color: $white;
       font-family: "PlayfairDisplay-Regular";
       font-weight: 400;
-      // position: absolute;
-      // top: 50px;
       margin-top: 50px;
     }
 
     &-btn {
-      display: flex;
-      justify-content: center;
+      display: block;
       color: $white;
       font-family: "PlayfairDisplay-Regular";
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
-      // position: absolute;
-      // bottom: 43px;
       border: 1px solid $white;
       padding: 13px 0;
       margin-bottom: 50px;
-      max-width: 300px;
-      width: 100%;
+      padding: 13px 124px;
     }
 
+    &-picture {
+      background: url('../images/about-picture_1.webp');
+      transition: 1s;
+      width: 480px;
+      height: 80vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0;
+    }
+
+    &-picture:nth-of-type(2) {
+      background: url('../images/about-picture_2.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 1s;
+      width: 480px;
+      height: 80vh;
+
+    }
+
+    &-picture:nth-of-type(3) {
+      background: url('../images/about-picture_3.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 1s;
+      width: 480px;
+      height: 80vh;
+    }
+
+    &-picture:nth-of-type(4) {
+      background: url('../images/about-picture_4.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 1s;
+      width: 480px;
+      height: 80vh;
+    }
+
+    &-picture.active {
+      width: 600px;
+    }
+
+    &-picture.active &-about {
+      opacity: 1;
+    }
+  }
+
+  // ThirdIndex.pug
+  &__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &-img {
+      width: 100%;
+    }
+    &-all{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &-title {
+      font-size: 48px;
+      line-height: 50px;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
+      color: $black;
+      margin-bottom: 30px;
+    }
+    &-allMenu{
+      max-width: 763px;
+      width: 100%;
+    }
+    &-first {
+      margin-bottom: 30px;
+    }
+
+    &-text {
+      color: $black;
+      font-size: 20px;
+      line-height: 24px;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
+    }
+
+    &-describe {
+      font-size: 18px;
+      line-height: 24px;
+      color: $black;
+      font-family: "PlayfairDisplay-Regular";
+      font-weight: 400;
+
+    }
   }
 }

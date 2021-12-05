@@ -1,11 +1,7 @@
 .header{
 &__content{
-  margin-bottom: -4px;
   background: url('../images/header-bg.webp') no-repeat center center /cover;
   height: 100vh;
-  &-img{
-    width: 100%;
-}
 &-info{
   position: absolute;
     top: 0;
@@ -32,14 +28,9 @@
   left: -290px;
   transition: 0.5s;
   padding-top: 22px;
-      &.active{
-        left: 0;
-    
-  
-   
-      }
-  
-
+  &.active{
+    left: 0;
+  }
     &-text{
         color: $white;
           border: 1px solid $white;
@@ -89,8 +80,6 @@ font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     margin: 45px 0;
-
-    // надо спросить про всю видимую часть 
   }
   
 }
