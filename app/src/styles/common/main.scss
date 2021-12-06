@@ -112,10 +112,6 @@
 
   &__right {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-wrap: wrap;
-
     padding: 150px 20px;
 
     &-input {
@@ -244,9 +240,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      transition: 1s;
-      width: 480px;
-      height: 80vh;
 
     }
 
@@ -255,19 +248,13 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      transition: 1s;
-      width: 480px;
-      height: 80vh;
     }
 
     &-picture:nth-of-type(4) {
       background: url('../images/about-picture_4.webp');
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
-      transition: 1s;
-      width: 480px;
-      height: 80vh;
+      background-position: center;  
     }
 
     &-picture.active {

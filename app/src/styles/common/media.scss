@@ -13,6 +13,9 @@
         margin-top: 20px;
     }
 }
+.main__menu{
+    grid-template-columns: none;
+}
 }
 @media(max-width:1300px){
 .main__items-title{
@@ -54,6 +57,18 @@
     }
     .main__items-title{
         margin: 20px 0;
+    }
+    .main__kitchen-picture{
+        width: 100%;
+    }
+    .main__kitchen{
+        display: block;
+    }
+    .main__kitchen-picture.active {
+        width: 100%;
+    }
+    .main__kitchen-about{
+        opacity: 1;
     }
     
 }
