@@ -270,10 +270,6 @@
   &__menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    &-img {
-      width: 100%;
-    }
     &-all{
       display: flex;
       flex-direction: column;
@@ -287,6 +283,7 @@
       font-weight: 400;
       color: $black;
       margin-bottom: 30px;
+      
     }
     &-allMenu{
       max-width: 763px;

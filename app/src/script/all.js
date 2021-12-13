@@ -22,8 +22,31 @@ mainImg.forEach(list => {
   })
 })
 
+const slide = document.querySelector('.main__menu-picture'),
+ slideParent = document.querySelectorAll('.main__menu-aboutPicture '),
+ slideHeight = slide.clientHeight,
+ slideWidth = slide.clientWidth,
+ activeSlide = 0
 
+slide.style = `
+position:relative;
+height:${slideHeight}px;
+overflow:hidden;
+`
+slideParent.forEach(item => {
+  for(let i = 0; i<item.length; i++){
+    item.style = `
+    position:absolute;
+    width: ${slideWidth}px;
+    height: ${slideHeight}px;
+    `
+    if(i != activeSlide){
+      item.style.transform = `translateX(${slideWidth}px)`
+    }
+    
+  } 
 
+})
 
 
 
