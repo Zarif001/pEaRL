@@ -22,41 +22,48 @@ mainImg.forEach(list => {
   })
 })
 
-const slide = document.querySelector('.main__menu-picture'),
- slideParent = document.querySelectorAll('.main__menu-aboutPicture'),
- slideHeight = slide.clientHeight,
- slideWidth = slide.clientWidth,
- activeSlide = 0
- 
- console.log(slideParent);
+const slideParent = document.querySelector('.main__menu-aboutPicture'),
+img = [...slideParent.children],
+dots = document.querySelectorAll('.main__menu-dot')
+let index = 0
+let dotIndex = 0
 
-slide.style = `
-position:relative;
-height:${slideHeight}px;
-overflow:hidden;
-`
-function time() {
-  slideParent.forEach((item,i) => {
-    item.style = `
-      position:absolute;
-      width: ${slideWidth}px;
-      height: ${slideHeight}px;
-      `
-     
-        if(i == 0){
-          item.style.transform = `translateX(0px)`
-        }else {
-          item.style.transform = `translateX(${-slideWidth}px)`
-        }
-    
-      
-  
+function sliderNext() {
+  if(index < (img.length - 1) * slideParent.clientWidth) {
+    index += slideParent.clientWidth
+    dotIndex++
+  } else {
+    index = 0
+    dotIndex = 0
+  }
+  img.forEach(i =>{
+    i.style.transform = ` translateX(-${index}px)`
+    i.style.transition = '1s'
   })
+  
+  setTimeout(() => sliderNext(), 2000);
+  remove(dotIndex)
+}
+sliderNext()
+
+dots.forEach((dot, i) =>{
+  dot.addEventListener('click', () =>{
+    index = slideParent.clientWidth * i
+    img.forEach(i =>{
+      i.style.transform = ` translateX(-${index}px)`
+      i.style.transition = '1s'
+    })
+    dotIndex = i
+    remove(dotIndex)
+  })
+})
+function remove(index) { 
+  dots.forEach(dot => {
+      dot.classList.remove('active')
+  })
+  dots[index].classList.add('active')
 }
 
-time()
-setInterval(time, 1000);
-// slideParent[activeSlide].style.transform = `translateX(0px)`
 
 
 
